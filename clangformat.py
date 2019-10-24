@@ -10,13 +10,10 @@ class CformatCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         filename = self.view.file_name()
         print(filename)
-        shell_cmd = ["C:\\Program Files\\LLVM\\bin\\clang-format", "-i", filename]
+        shell_cmd = ["C:\\Program Files\\LLVM\\bin\\clang-format", "-style=file",  "-i",  "-fallback-style=none", filename]
         # hoping the wait will till file is written where requesting the window loads the saved file
         # if on a netwrok drive likely to be a noticable delay
         self.proc = subprocess.Popen(shell_cmd, shell=True).wait()
         self.view.window()
-
-
-
 
 
