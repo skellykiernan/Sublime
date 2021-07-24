@@ -7,6 +7,7 @@
   - CMake
   - Copy as HTML
   - FileSystem Autocompletion
+  - MarkdownPreview
   - Package Control
   - SmartMarkdown
   - Table Editor
