@@ -4,6 +4,7 @@
   - call the following programs
      + clang-format
      + vim
+  -  Modified [DoxyDoc](https://packagecontrol.io/packages/DoxyDoc) to match preferred C doxygen style
 # Other useful items sublime
 ## Packages 
   - CMake
@@ -13,7 +14,7 @@
   - Package Control
   - SmartMarkdown
   - Table Editor
-  - Therme Spacegray
+  - Theme Spacegray
 
 
 ## smartdown smart_floding
