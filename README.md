@@ -1,7 +1,9 @@
 # Sublime
 
 # SkelsPlugin
-
+  - call the following programs
+     + clang-format
+     + vim
 # Other useful items sublime
 ## Packages 
   - CMake
