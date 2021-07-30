@@ -11,18 +11,25 @@
 ###############################################################################
 
 ###############################################################################
+# SECTION: Script Version
+###############################################################################
+SCRIPT_MAJOR_VERSION=0
+SCRIPT_MINOR_VERSION=1
+SCRIPT_PATCH_NUM=0
+
+###############################################################################
 # SECTION: Script Configuration
 ###############################################################################
 # Comment out the line NOT needed for each of the configurations 
 
-#export CFG_PRINT_INFO=0 
-export CFG_PRINT_INFO=1
+#CFG_PRINT_INFO=0 
+CFG_PRINT_INFO=1
 
-export CFG_PRINT_DEBUG=0 
-#export CFG_PRINT_DEBUG=1
+CFG_PRINT_DEBUG=0
+#CFG_PRINT_DEBUG=1
 
-export CFG_PRINT_TRACE=0
-#export CFG_PRINT_TRACE=1
+CFG_PRINT_TRACE=0
+#CFG_PRINT_TRACE=1
 
 ###############################################################################
 # SECTION: Functions 
@@ -51,15 +58,32 @@ function print_trace {
 }
 
 ###############################################################################
-# SECTION: usage/help file
+# SECTION: boiler plate help, version functions
 ###############################################################################
 
-## TBD
+function display_help {
+   echo "$1 Add a brief description."
+   echo
+   echo "Syntax: $2 script_name [h|v|V]"
+   echo "options:"
+   echo "-h     Print this Help."
+   echo "-v     Verbose mode."
+   echo "-V     Print software version and exit."
+   echo
+}
+
+function display_version() {
+    echo ""
+    echo "###############################################################################"
+    echo "# $2 script_name version = \$SCRIPT_MAJOR_VERSION.\$SCRIPT_MINOR_VERSION.\$SCRIPT_PATCH_NUM"
+    echo "###############################################################################"
+    echo ""
+}
 
 ###############################################################################
 # SECTION: Start of executions 
 ###############################################################################
-$1
+$4
 ]]></content>
     <!-- Optional: Tab trigger to activate the snippet -->
     <tabTrigger>implfile</tabTrigger>
