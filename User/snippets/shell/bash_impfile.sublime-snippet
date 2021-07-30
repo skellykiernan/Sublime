@@ -1,0 +1,69 @@
+<snippet>
+    <content><![CDATA[
+#!/usr/bin/env bash 
+
+###############################################################################
+#
+#
+# No License here, do not distrubute externally (not yet anyway)
+#
+#
+###############################################################################
+
+###############################################################################
+# SECTION: Script Configuration
+###############################################################################
+# Comment out the line NOT needed for each of the configurations 
+
+#export CFG_PRINT_INFO=0 
+export CFG_PRINT_INFO=1
+
+export CFG_PRINT_DEBUG=0 
+#export CFG_PRINT_DEBUG=1
+
+export CFG_PRINT_TRACE=0
+#export CFG_PRINT_TRACE=1
+
+###############################################################################
+# SECTION: Functions 
+###############################################################################
+
+function print_info {
+    if [[ \$CFG_PRINT_INFO == 1 ]]; then
+        # enable those backlashes
+        echo -e \$@
+    fi  
+}
+
+
+function print_debug {
+    if [[ \$CFG_PRINT_DEBUG == 1 ]]; then
+            # enable those backlashes
+        echo -e \$@
+    fi  
+}
+
+function print_trace {
+    if [[ \$CFG_PRINT_TRACE == 1 ]]; then
+            # enable those backlashes
+        echo -e \$@
+    fi  
+}
+
+###############################################################################
+# SECTION: usage/help file
+###############################################################################
+
+## TBD
+
+###############################################################################
+# SECTION: Start of executions 
+###############################################################################
+$1
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>implfile</tabTrigger>
+    <scope>source.shell.bash</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>insert template bash shell script</description>
+</snippet>
