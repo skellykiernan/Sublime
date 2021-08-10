@@ -58,7 +58,7 @@ function print_trace {
 }
 
 ###############################################################################
-# SECTION: boiler plate help, version functions
+# SECTION: boiler plate functions
 ###############################################################################
 
 function display_help {
