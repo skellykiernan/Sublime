@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[**_$1_-?**
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>dki_comment</tabTrigger>
+    <scope>text.html.markdown, text.restructuredtext</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Add my own custom comment </description>
+</snippet>
+
