@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+-----------------------
+- SECTION:$1
+-----------------------
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>dki_section_comment</tabTrigger>
+    <scope>text.html.markdown, text.restructuredtext</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Insert a section comment</description>
+</snippet>
